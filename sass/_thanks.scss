@@ -1,0 +1,26 @@
+// Thanks Body
+.thanks-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// Thanks
+.thanks-section {
+  .container {
+    .thanks-wrapper {
+      h2 {
+        margin-bottom: 3rem;
+      }
+
+      h5 {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

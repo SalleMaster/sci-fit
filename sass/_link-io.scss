@@ -1,0 +1,83 @@
+.link {
+  cursor: pointer;
+  font-size: 2rem;
+  position: relative;
+  white-space: nowrap;
+  color: $black;
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: '';
+  /* show by default */
+}
+
+.link--io:hover {
+  transition: all 0.3s ease-in-out;
+  color: $primary;
+}
+
+.link--io.active {
+  transition: all 0.3s ease-in-out;
+  color: $primary;
+}
+
+.link--io::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  color: $primary;
+}
+
+.link--io:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+  color: $primary;
+}
+
+.link--io.active::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+  color: $primary;
+}
+
+.link--io::after {
+  content: '';
+  top: calc(100% + 4px);
+  transform-origin: 0% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  color: $primary;
+}
+
+.link--io:hover::after {
+  transform-origin: 100% 50%;
+  transform: scale3d(1, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+  color: $primary;
+}
+
+.link--io.active::after {
+  transform-origin: 100% 50%;
+  transform: scale3d(1, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+  color: $primary;
+}
+
+@media (min-width: 992px) {
+  .link {
+    font-size: 1.1rem;
+  }
+}

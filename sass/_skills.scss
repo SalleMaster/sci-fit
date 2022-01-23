@@ -1,0 +1,150 @@
+// Skils
+.skills-section {
+  .container {
+    .skills-header {
+      span {
+        position: relative;
+        display: inline-block;
+
+        .div-2,
+        .div-3 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+        }
+
+        .div-1 {
+          animation: div1 7s infinite;
+        }
+        .div-2 {
+          animation: div2 7s infinite;
+        }
+        .div-3 {
+          animation: div3 7s infinite;
+        }
+      }
+    }
+
+    .skills-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5rem;
+
+      .skill-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        p {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// Header Animations
+@keyframes div1 {
+  0%,
+  11% {
+    opacity: 0;
+  }
+  11%,
+  22% {
+    opacity: 1;
+  }
+  22%,
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes div2 {
+  0%,
+  33% {
+    opacity: 0;
+  }
+  33%,
+  44% {
+    opacity: 0;
+  }
+  44%,
+  55% {
+    opacity: 1;
+  }
+  55%,
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes div3 {
+  0%,
+  66% {
+    opacity: 0;
+  }
+  66%,
+  77% {
+    opacity: 0;
+  }
+  77%,
+  95% {
+    opacity: 1;
+  }
+  95%,
+  100% {
+    opacity: 0;
+  }
+}
+
+// Responsive Media Queries
+@media (min-width: 576px) {
+  .skills-section {
+    .container {
+      .skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-section {
+    .container {
+      .skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .skills-section {
+    .container {
+      .skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1600px) {
+}

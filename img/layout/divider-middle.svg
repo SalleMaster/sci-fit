@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="400" viewBox="0 0 1920 400">
+  <g id="Group_182" data-name="Group 182" transform="translate(-9242 -4048)">
+    <path id="wave" d="M0,165.333,640,98.667l640,66.667L1920,232V32H0Z" transform="translate(9242 4216)" fill="#b8860b"/>
+    <path id="wave-2" data-name="wave" d="M0,98.667l640,66.667,640-66.667L1920,32V232H0Z" transform="translate(9242 4016)" fill="#b8860b"/>
+    <rect id="Rectangle_26" data-name="Rectangle 26" width="1920" height="61" transform="translate(9242 4232)" fill="#b8860b"/>
+  </g>
+</svg>

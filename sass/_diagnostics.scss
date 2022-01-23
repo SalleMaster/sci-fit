@@ -1,0 +1,35 @@
+.diagnostics-section {
+  .diagnostics-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-bottom: 3rem;
+    }
+
+    img {
+      width: 50%;
+      align-self: center;
+    }
+  }
+}
+
+// Responsive Media Queries
+@media (min-width: 768px) {
+  .diagnostics-section {
+    .diagnostics-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      align-items: center;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      img {
+        width: 60%;
+        margin-left: auto;
+      }
+    }
+  }
+}

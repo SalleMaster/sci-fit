@@ -1,0 +1,211 @@
+// Contact
+.contact-section {
+  .container {
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5rem;
+
+      .contact-info {
+        .box {
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          margin-bottom: 1rem;
+
+          h4 {
+            margin-bottom: 1rem;
+            margin-right: auto;
+          }
+
+          a {
+            margin-right: auto;
+            margin-bottom: 1.2rem;
+            position: relative;
+
+            &:after {
+              position: absolute;
+              content: '';
+              bottom: -3px;
+              left: 0;
+              height: 1px;
+              width: 100%;
+              background: $black;
+              transition: all 0.3s ease;
+              transform-origin: left;
+              transform: scaleX(0);
+            }
+
+            &:hover {
+              &:after {
+                transform: scaleX(1);
+              }
+            }
+
+            .margin-3px {
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+
+      .contact-form-wrapper {
+        display: flex;
+        flex-direction: column;
+        background: $black;
+        color: $white;
+        padding: 3rem 5rem;
+
+        h4 {
+          align-self: center;
+          margin-bottom: 2rem;
+        }
+
+        form {
+          .form-box {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            label {
+              margin-bottom: 0.5rem;
+            }
+
+            .form-control {
+              padding: 0.7rem 0.5rem;
+              font-size: 1rem;
+              background: #171717;
+              color: $white;
+              border: none;
+              border-bottom: 1px solid #171717;
+              transition: background-color 0.2s ease-in-out;
+
+              &:focus {
+                background: #373737;
+                border-bottom: 1px solid $white;
+                outline: none;
+              }
+            }
+
+            button {
+              margin: 0 auto;
+              border: none;
+              cursor: pointer;
+              font-family: inherit;
+              font-weight: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Media Queries
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .contact-section {
+    .container {
+      .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5rem;
+
+        .contact-info {
+          .box {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            margin-bottom: 1rem;
+
+            h4 {
+              margin-bottom: 1rem;
+              margin-right: auto;
+            }
+
+            a {
+              margin-right: auto;
+              margin-bottom: 1.2rem;
+              position: relative;
+
+              &:after {
+                position: absolute;
+                content: '';
+                bottom: -3px;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background: $black;
+                transition: all 0.3s ease;
+                transform-origin: left;
+                transform: scaleX(0);
+              }
+
+              &:hover {
+                &:after {
+                  transform: scaleX(1);
+                }
+              }
+            }
+          }
+        }
+
+        .contact-form-wrapper {
+          display: flex;
+          flex-direction: column;
+          background: $black;
+          color: $white;
+          padding: 3rem 5rem;
+
+          h4 {
+            align-self: center;
+            margin-bottom: 2rem;
+          }
+
+          form {
+            .form-box {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 2rem;
+
+              label {
+                margin-bottom: 0.5rem;
+              }
+
+              .form-control {
+                padding: 0.7rem 0.5rem;
+                font-size: 1rem;
+                background: #171717;
+                color: $white;
+                border: none;
+                border-bottom: 1px solid #171717;
+                transition: background-color 0.2s ease-in-out;
+
+                &:focus {
+                  background: #373737;
+                  border-bottom: 1px solid $white;
+                  outline: none;
+                }
+              }
+
+              button {
+                margin-right: auto;
+                border: none;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1600px) {
+}

@@ -59,9 +59,21 @@ body {
     display: none;
   }
 
+  .nav-links {
+    background: rgba($white, 0.3) !important;
+  }
+
   &.bg-black {
     background: $black;
     color: $white;
+
+    .menu-responsive {
+      background: $black;
+    }
+
+    .nav-links {
+      background: rgba($black, 0.3) !important;
+    }
 
     a {
       color: $white;
@@ -73,7 +85,7 @@ body {
       }
 
       &.light {
-        display: block;
+        display: block !important;
       }
     }
 
@@ -82,7 +94,7 @@ body {
     }
 
     .light-logo {
-      display: block;
+      display: block !important;
     }
   }
 }

@@ -30,13 +30,15 @@
               left: 0;
               height: 1px;
               width: 100%;
-              background: $black;
+              background: $primary;
               transition: all 0.3s ease;
               transform-origin: left;
               transform: scaleX(0);
             }
 
             &:hover {
+              color: $primary;
+
               &:after {
                 transform: scaleX(1);
               }
@@ -138,7 +140,7 @@
                 left: 0;
                 height: 1px;
                 width: 100%;
-                background: $black;
+                background: $primary;
                 transition: all 0.3s ease;
                 transform-origin: left;
                 transform: scaleX(0);

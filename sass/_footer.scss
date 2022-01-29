@@ -1,7 +1,122 @@
-// Footer
-.footer {
-  background: $black;
-  color: $white;
-  padding: 1.5rem;
-  text-align: center;
+.footer-section {
+  // background: $white;
+  padding: 5rem 0;
+  margin: 0;
+
+  .container {
+    .footer-wrapper {
+      // color: $white;
+
+      img {
+        width: 120px;
+        // display: block;
+        margin-bottom: 3rem;
+      }
+
+      .links-wrapper {
+        a {
+          margin-right: auto;
+          margin-bottom: 1.2rem;
+          position: relative;
+
+          &:after {
+            position: absolute;
+            content: '';
+            bottom: -3px;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background: $primary;
+            transition: all 0.3s ease;
+            transform-origin: left;
+            transform: scaleX(0);
+          }
+
+          &:hover {
+            color: $primary;
+
+            &:after {
+              transform: scaleX(1);
+            }
+          }
+
+          .margin-3px {
+            margin-right: 3px;
+          }
+        }
+
+        margin-bottom: 3rem;
+
+        .contact-wrapper {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2rem;
+
+          .link {
+            color: $black;
+            margin-right: auto;
+            margin-bottom: 1rem;
+          }
+        }
+
+        .navigation-links {
+          display: flex;
+          flex-direction: column;
+
+          .link {
+            display: block;
+            color: $black;
+            margin-left: auto;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      .rights {
+        text-align: center;
+        color: $black;
+        margin-bottom: 1rem;
+      }
+
+      .signature {
+        text-align: center;
+        color: $black;
+
+        a {
+          color: $black;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Media Queries
+@media (min-width: 768px) {
+  .footer-section {
+    .container {
+      .footer-wrapper {
+        .links-wrapper {
+          display: flex;
+          justify-content: space-between;
+
+          .contact-wrapper {
+            margin-bottom: 0;
+          }
+
+          .navigation-links {
+            flex-direction: column;
+
+            .link {
+              margin-top: auto;
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -146,28 +146,128 @@ const bgWhite = () => {
 }
 
 // Hero Trigger
-ScrollTrigger.create({
-  // markers: true,
-  trigger: '.hero',
-  start: 'top bottom',
-  endTrigger: '.hero',
-  end: 'bottom top',
-  onEnter: () => bgWhite(),
-  onLeave: () => bgBlack(),
-  onEnterBack: () => bgWhite(),
-})
+// ScrollTrigger.create({
+//   // markers: true,
+//   trigger: '.hero',
+//   start: 'top bottom',
+//   endTrigger: '.hero',
+//   end: 'bottom top',
+//   onEnter: () => bgWhite(),
+//   onLeave: () => bgWhite(),
+//   onEnterBack: () => bgWhite(),
+// })
 
-// // Skills Trigger
+// Hero Trigger
+// ScrollTrigger.create({
+//   // markers: true,
+//   trigger: '#contact',
+//   start: 'top bottom',
+//   endTrigger: '#contact',
+//   end: 'bottom top',
+//   onEnter: () => bgWhite(),
+//   onLeave: () => bgWhite(),
+//   onEnterBack: () => bgWhite(),
+// })
+
+// Diagnostics Trigger
+// ScrollTrigger.create({
+//   // markers: true,
+//   trigger: '#diagnostics',
+//   start: 'top bottom',
+//   endTrigger: '#diagnostics',
+//   end: 'bottom top',
+//   onEnter: () => bgWhite(),
+//   onLeave: () => bgWhite(),
+//   onEnterBack: () => bgWhite(),
+// })
+
+// How we work Trigger
+// ScrollTrigger.create({
+//   // markers: true,
+//   trigger: '#how-we-work',
+//   start: 'top bottom',
+//   endTrigger: '#how-we-work',
+//   end: 'bottom top',
+//   onEnter: () => bgWhite(),
+//   onLeave: () => bgWhite(),
+//   onEnterBack: () => bgWhite(),
+// })
+
+// About studio Trigger
+// ScrollTrigger.create({
+//   // markers: true,
+//   trigger: '#about-studio',
+//   start: 'top bottom',
+//   endTrigger: '#about-studio',
+//   end: 'bottom top',
+//   onEnter: () => bgWhite(),
+//   onLeave: () => bgWhite(),
+//   onEnterBack: () => bgWhite(),
+// })
+
+// Workouts Trigger
 ScrollTrigger.create({
   // markers: true,
-  trigger: '.skills-section',
-  start: 'center bottom',
-  endTrigger: '.skills-section',
-  end: 'top center',
+  trigger: '.workouts-section',
+  start: '-10 top -10 top',
+  endTrigger: '.workouts-section',
+  end: 'bottom top',
   onEnter: () => bgBlack(),
   onLeave: () => bgWhite(),
   onEnterBack: () => bgBlack(),
+  onLeaveBack: () => bgWhite(),
 })
+
+// Benefits Trigger
+ScrollTrigger.create({
+  // markers: true,
+  trigger: '.benefits-section',
+  start: 'top top',
+  endTrigger: '.benefits-section',
+  end: 'bottom top',
+  onEnter: () => bgBlack(),
+  onLeave: () => bgWhite(),
+  onEnterBack: () => bgBlack(),
+  onLeaveBack: () => bgWhite(),
+})
+
+// About me Trigger
+ScrollTrigger.create({
+  // markers: true,
+  trigger: '#about-me',
+  start: '-200 top -200 top',
+  endTrigger: '#about-me',
+  end: 'bottom top',
+  onEnter: () => bgBlack(),
+  onLeave: () => bgWhite(),
+  onEnterBack: () => bgBlack(),
+  onLeaveBack: () => bgWhite(),
+})
+
+// Location Trigger
+ScrollTrigger.create({
+  // markers: true,
+  trigger: '#location',
+  start: 'top top',
+  endTrigger: '#location',
+  end: 'bottom top',
+  onEnter: () => bgBlack(),
+  onLeave: () => bgWhite(),
+  onEnterBack: () => bgBlack(),
+  onLeaveBack: () => bgWhite(),
+})
+
+// // Skills Trigger
+// ScrollTrigger.create({
+//   // markers: true,
+//   trigger: '.skills-section',
+//   start: 'center bottom',
+//   endTrigger: '.skills-section',
+//   end: 'top center',
+//   onEnter: () => bgBlack(),
+//   onLeave: () => bgWhite(),
+//   onEnterBack: () => bgBlack(),
+// })
 
 // Footer Year
 const year = document.querySelector('.year')

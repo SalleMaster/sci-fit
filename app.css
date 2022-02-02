@@ -621,7 +621,7 @@ body.bg-black .menu-responsive .menu-responsive-links .menu-responsive-link .lin
 
 .hero .social {
   position: absolute;
-  left: 1rem;
+  right: 1rem;
   bottom: 2rem;
 }
 
@@ -680,6 +680,9 @@ body.bg-black .menu-responsive .menu-responsive-links .menu-responsive-link .lin
   }
   .hero .container .header-wrapper img {
     height: 35%;
+  }
+  .hero .social {
+    left: 1rem;
   }
 }
 

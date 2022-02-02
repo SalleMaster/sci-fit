@@ -53,8 +53,9 @@
   }
 
   .social {
+    // display: none;
     position: absolute;
-    left: 1rem;
+    right: 1rem;
     // top: 50%;
     // transform: translateY(-50%);
     bottom: 2rem;
@@ -131,6 +132,10 @@
           height: 35%;
         }
       }
+    }
+
+    .social {
+      left: 1rem;
     }
   }
 }

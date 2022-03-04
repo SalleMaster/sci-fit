@@ -1,4 +1,58 @@
-#about-me {
-  background: $black;
-  color: $white;
+// #about-me {
+//   background: $black;
+//   color: $white;
+// }
+
+// About
+.about-section {
+  .container {
+    .about-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5rem;
+
+      .about-box {
+        width: 80%;
+
+        h4 {
+          margin-bottom: 1rem;
+        }
+
+        h5 {
+          line-height: 1.5;
+
+          a {
+            .fa-file-download {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Media Queries
+@media (min-width: 992px) {
+  .about-section {
+    .container {
+      .about-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+
+        .about-box {
+          width: 100%;
+
+          h4 {
+            margin-bottom: 1rem;
+          }
+
+          h5 {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
 }

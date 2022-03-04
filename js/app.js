@@ -26,16 +26,6 @@ navLogo.addEventListener('click', removeNavbar)
 document.addEventListener('DOMContentLoaded', (event) => {
   var tl = gsap.timeline()
 
-  // tl.to('.loading-anim1', { duration: 1, opacity: 0 })
-  //   .to('.loading-anim2', { duration: 0.5, opacity: 1 })
-  //   .to('.loading-anim2', { duration: 0.5, opacity: 0 })
-  //   .to('.loading-screen', { duration: 1, scaleY: 0 })
-  //   .from('.header-anim1', { duration: 1, opacity: 0 })
-  //   .from('.header-anim2-overlay', { duration: 2, scaleY: 1 })
-  //   .from('.header-anim3', { duration: 0.7, opacity: 0 })
-  //   .from('.header-anim4', { duration: 0.7, opacity: 0 })
-  //   .from('.header-anim5', { duration: 2, opacity: 0 }, '-=1.4');
-
   tl.to('.loading-anim1', { duration: 1, opacity: 0 })
     .to('.loading-anim2', { duration: 0.5, opacity: 1 })
     .to('.loading-anim2', { duration: 0.5, opacity: 0 })
@@ -52,35 +42,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     html.style.overflow = 'auto'
   }, 2000)
 })
-
-// Fade In Left & Right
-// const fadeInLeft = document.querySelectorAll('.fade-in-left');
-// const fadeInRight = document.querySelectorAll('.fade-in-right');
-
-// fadeInLeft.forEach((fadeIn) => {
-//   gsap.from(fadeIn, {
-//     scrollTrigger: {
-//       // markers: true,
-//       trigger: fadeIn,
-//       start: 'bottom bottom', // when the Bottom of the trigger hits the Bottom of the viewport
-//     },
-//     duration: 3,
-//     ease: 'power4.out',
-//     opacity: '0',
-//   });
-// });
-
-// fadeInRight.forEach((fadeIn) => {
-//   gsap.from(fadeIn, {
-//     scrollTrigger: {
-//       trigger: fadeIn,
-//       start: 'bottom bottom', // when the Bottom of the trigger hits the Bottom of the viewport
-//     },
-//     duration: 3,
-//     ease: 'power4.out',
-//     opacity: '0',
-//   });
-// });
 
 // Basic Fade In
 const fadeIn = document.querySelectorAll('.fade-in')
@@ -117,23 +78,6 @@ let skillsTimeline = gsap.timeline({
   },
 })
 
-// add animations and labels to the timeline
-skillsTimeline
-  .from('.skill-anim1', { duration: 0.3, scale: 0 })
-  .from('.skill-anim2', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim3', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim4', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim5', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim6', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim7', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim8', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim9', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim10', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim11', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim12', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim13', { duration: 0.3, scale: 0 }, '-=.1')
-  .from('.skill-anim14', { duration: 0.3, scale: 0 }, '-=.1')
-
 // Toggle Body Background
 const body = document.querySelector('body')
 
@@ -145,85 +89,12 @@ const bgWhite = () => {
   body.classList.remove('bg-black')
 }
 
-// Hero Trigger
-// ScrollTrigger.create({
-//   // markers: true,
-//   trigger: '.hero',
-//   start: 'top bottom',
-//   endTrigger: '.hero',
-//   end: 'bottom top',
-//   onEnter: () => bgWhite(),
-//   onLeave: () => bgWhite(),
-//   onEnterBack: () => bgWhite(),
-// })
-
-// Hero Trigger
-// ScrollTrigger.create({
-//   // markers: true,
-//   trigger: '#contact',
-//   start: 'top bottom',
-//   endTrigger: '#contact',
-//   end: 'bottom top',
-//   onEnter: () => bgWhite(),
-//   onLeave: () => bgWhite(),
-//   onEnterBack: () => bgWhite(),
-// })
-
-// Diagnostics Trigger
-// ScrollTrigger.create({
-//   // markers: true,
-//   trigger: '#diagnostics',
-//   start: 'top bottom',
-//   endTrigger: '#diagnostics',
-//   end: 'bottom top',
-//   onEnter: () => bgWhite(),
-//   onLeave: () => bgWhite(),
-//   onEnterBack: () => bgWhite(),
-// })
-
-// How we work Trigger
-// ScrollTrigger.create({
-//   // markers: true,
-//   trigger: '#how-we-work',
-//   start: 'top bottom',
-//   endTrigger: '#how-we-work',
-//   end: 'bottom top',
-//   onEnter: () => bgWhite(),
-//   onLeave: () => bgWhite(),
-//   onEnterBack: () => bgWhite(),
-// })
-
-// About studio Trigger
-// ScrollTrigger.create({
-//   // markers: true,
-//   trigger: '#about-studio',
-//   start: 'top bottom',
-//   endTrigger: '#about-studio',
-//   end: 'bottom top',
-//   onEnter: () => bgWhite(),
-//   onLeave: () => bgWhite(),
-//   onEnterBack: () => bgWhite(),
-// })
-
 // Workouts Trigger
 ScrollTrigger.create({
   // markers: true,
   trigger: '.workouts-section',
   start: '-10 top -10 top',
   endTrigger: '.workouts-section',
-  end: 'bottom top',
-  onEnter: () => bgBlack(),
-  onLeave: () => bgWhite(),
-  onEnterBack: () => bgBlack(),
-  onLeaveBack: () => bgWhite(),
-})
-
-// Benefits Trigger
-ScrollTrigger.create({
-  // markers: true,
-  trigger: '.benefits-section',
-  start: 'top top',
-  endTrigger: '.benefits-section',
   end: 'bottom top',
   onEnter: () => bgBlack(),
   onLeave: () => bgWhite(),
@@ -257,18 +128,6 @@ ScrollTrigger.create({
   onLeaveBack: () => bgWhite(),
 })
 
-// // Skills Trigger
-// ScrollTrigger.create({
-//   // markers: true,
-//   trigger: '.skills-section',
-//   start: 'center bottom',
-//   endTrigger: '.skills-section',
-//   end: 'top center',
-//   onEnter: () => bgBlack(),
-//   onLeave: () => bgWhite(),
-//   onEnterBack: () => bgBlack(),
-// })
-
 // Footer Year
 const year = document.querySelector('.year')
 
@@ -276,13 +135,6 @@ const date = new Date()
 const currentYear = date.getFullYear()
 
 year.innerHTML = currentYear
-
-// Scroll to top on Load & Refresh
-// history.scrollRestoration = 'manual';
-
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// };
 
 // Nav active class
 const sections = document.querySelectorAll('section')
@@ -302,8 +154,5 @@ window.onscroll = () => {
     if (li.href.includes(current)) {
       li.classList.add('active')
     }
-    // if (li.classList.contains(current)) {
-    //   li.classList.add('active')
-    // }
   })
 }

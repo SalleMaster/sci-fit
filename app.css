@@ -126,7 +126,8 @@ p {
 }
 
 .font-secondary {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
 .opacity-7 {
@@ -616,7 +617,7 @@ body.bg-black .menu-responsive .menu-responsive-links .menu-responsive-link .lin
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 25%;
+  height: 30%;
   width: auto;
   z-index: -1;
 }
@@ -681,7 +682,7 @@ body.bg-black .menu-responsive .menu-responsive-links .menu-responsive-link .lin
     line-height: 1.3;
   }
   .hero .container .header-wrapper img {
-    height: 35%;
+    height: 40%;
   }
   .hero .social {
     left: 1rem;
@@ -695,7 +696,7 @@ body.bg-black .menu-responsive .menu-responsive-links .menu-responsive-link .lin
     line-height: 1.3;
   }
   .hero .container .header-wrapper img {
-    height: 40%;
+    height: 45%;
   }
   .language {
     display: flex;
@@ -710,7 +711,7 @@ body.bg-black .menu-responsive .menu-responsive-links .menu-responsive-link .lin
     width: 70%;
   }
   .hero .container .header-wrapper img {
-    height: 45%;
+    height: 90%;
   }
 }
 
@@ -1416,9 +1417,43 @@ body.bg-black .menu-responsive .menu-responsive-links .menu-responsive-link .lin
   margin-top: 2rem;
 }
 
-#about-me {
-  background: #010101;
-  color: #fafafa;
+.about-section .container .about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+.about-section .container .about-wrapper .about-box {
+  width: 80%;
+}
+
+.about-section .container .about-wrapper .about-box h4 {
+  margin-bottom: 1rem;
+}
+
+.about-section .container .about-wrapper .about-box h5 {
+  line-height: 1.5;
+}
+
+.about-section .container .about-wrapper .about-box h5 a .fa-file-download {
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .about-section .container .about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .about-section .container .about-wrapper .about-box {
+    width: 100%;
+  }
+  .about-section .container .about-wrapper .about-box h4 {
+    margin-bottom: 1rem;
+  }
+  .about-section .container .about-wrapper .about-box h5 {
+    line-height: 1.5;
+  }
 }
 
 .gallery-section .container .gallery-wrapper {

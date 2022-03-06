@@ -451,7 +451,6 @@ p {
 .section .container h1 {
   margin-top: 3rem;
   margin-bottom: 5rem;
-  text-align: center;
 }
 
 body .line {
@@ -463,6 +462,10 @@ body .line {
 
 body.bg-black .line {
   background: #fafafa;
+}
+
+.text-align-justify {
+  text-align: justify;
 }
 
 .nav {
@@ -1478,4 +1481,17 @@ body.bg-black .menu-responsive .menu-responsive-links .menu-responsive-link .lin
   .gallery-section .container .gallery-wrapper {
     column-count: 3;
   }
+}
+
+.encouragement-section {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.encouragement-section .container h1 {
+  text-align: center;
+}
+
+.encouragement-section .container h1 a {
+  color: #b8860b;
 }
